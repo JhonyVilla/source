@@ -11,7 +11,7 @@ sudo: required
 addons:
   apt:
     packages:
-    - language-pack-es.UTF-8
+    - language-pack-es
 
 install:
 - pip install -r requirements.txt
