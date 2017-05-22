@@ -1,13 +1,22 @@
 language: python
 python:
 - '2.7'
+
 branches:
   only:
   - master
+
 sudo: required
+
 install:
 - pip install -r requirements.txt
 - sudo apt-get install asciidoc source-highlight
+
+before_script:
+- import sys
+- reload(sys)
+- sys.setdefaultencoding("utf-8")
+
 script:
 - make publish
 
