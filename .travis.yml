@@ -8,14 +8,14 @@ branches:
 
 sudo: required
 
+addons:
+  apt:
+    packages:
+    - language-pack-es.UTF-8
+
 install:
 - pip install -r requirements.txt
 - sudo apt-get install asciidoc source-highlight
-
-before_script:
-- import sys
-- reload(sys)
-- sys.setdefaultencoding("utf-8")
 
 script:
 - make publish
