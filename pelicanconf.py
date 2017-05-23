@@ -2,10 +2,14 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
+
 AUTHOR = 'Fluid'
 SITENAME = 'Blog de Fluid'
 SITEURL = ''
-LOCALE =" en_US.UTF-8 "
+
 
 PATH = 'content'
 
