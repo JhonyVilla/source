@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Fluid'
 SITENAME = 'Blog de Fluid'
 SITEURL = ''
+LOCALE =" et_EE.UTF-8 "
 
 PATH = 'content'
 
