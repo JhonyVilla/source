@@ -46,6 +46,7 @@ PLUGINS = ['asciidoc_reader']
 
 # theme
 THEME = "theme/pelican-clean-blog"
+RELATIVE_URLS = True
 
 
 # Uncomment following line if you want document-relative URLs when developing
