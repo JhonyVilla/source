@@ -15,12 +15,7 @@ addons:
 
 install:
 - pip install -r requirements.txt
-- pip install git+https://github.com/getpelican/pelican#egg=pelican
 - sudo apt-get install asciidoc source-highlight
-
-before_script:
-  - export LANG=en_US.UTF-8
-  - export PYTHONIOENCODING=UTF-8
 
 script:
 - make publish
