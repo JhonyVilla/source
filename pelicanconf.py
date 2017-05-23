@@ -47,5 +47,8 @@ PLUGINS = ['asciidoc_reader']
 # theme
 THEME = "theme/pelican-clean-blog"
 
+COLOR_SCHEME_CSS = 'monokai.css'
+CSS_OVERRIDE = 'clean-blog.css'
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
