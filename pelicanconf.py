@@ -42,7 +42,7 @@ ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
 # Plugins
 PLUGIN_PATH = 'pelican-plugins'
-PLUGINS = ['asciidoc_reader']
+PLUGINS = ['asciidoc_reader','assets','better_figures_and_images','neighbors','representative_image']
 
 # theme
 THEME = "theme/pelican-clean-blog"
