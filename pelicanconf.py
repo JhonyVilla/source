@@ -8,7 +8,7 @@ sys.setdefaultencoding("utf-8")
 
 AUTHOR = 'Fluid'
 SITENAME = 'Blog de Fluid'
-SITEURL = ''
+SITEURL = 'https://lordjhony.github.io'
 
 
 PATH = 'content'
