@@ -7,6 +7,7 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+CSSDIR=$(THEMEDIR)/static/css
 
 FTP_HOST=localhost
 FTP_USER=anonymous
