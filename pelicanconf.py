@@ -40,7 +40,7 @@ ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
 # Plugins
-PLUGIN_PATH = 'pelican-plugins'
+PLUGIN_PATHS = 'pelican-plugins'
 PLUGINS = ['asciidoc_reader','assets','better_figures_and_images','neighbors','representative_image']
 
 # theme
