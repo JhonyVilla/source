@@ -44,7 +44,7 @@ PLUGIN_PATHS = 'pelican-plugins'
 PLUGINS = ['asciidoc_reader','assets','better_figures_and_images','neighbors','representative_image']
 
 # theme
-THEME = "theme/attila"
+THEME = "theme/pelican-clean-blog"
 RELATIVE_URLS = True
 
 
