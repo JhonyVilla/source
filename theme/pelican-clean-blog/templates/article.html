@@ -168,22 +168,23 @@
 </section>
 {% endif %}
 <br />
-<ul>
+<table>
+ <tr>
  {% if article.prev_article %}
-     <li>
+     <td width="200px" aligh="center">
          <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
              {{ article.prev_article.title }}
          </a>
-     </li>
+     </td>
  {% endif %}
  {% if article.next_article %}
-     <li>
+     <td width="200px" aligh="center">
          <a href="{{ SITEURL }}/{{ article.next_article.url}}">
              {{ article.next_article.title }}
          </a>
-     </li>
+      </td>
  {% endif %}
-</ul>
+</table>
 	
 
     {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
