@@ -142,7 +142,17 @@
         <a href="{{article.share_post['google-plus']}}" target="_blank" title="Share on Google Plus">Google +</a>
     </p>
 </section>
-{% endif %}	
+{% endif %}
+<hr>
+ {% if article.related_posts %}
+<section>
+    <ul>
+    {% for related_post in article.related_posts %}
+        <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+    {% endfor %}
+    </ul>
+</section>
+{% endif %}
 <hr>
  {% if article.tags %}
  <section>
