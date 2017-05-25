@@ -44,9 +44,7 @@ PLUGIN_PATHS = 'pelican-plugins'
 PLUGINS = ['asciidoc_reader','assets','neighbors','share_post','related_posts','disqus_static']
 
 # Discus
-DISQUS_SITENAME = 'https://lordjhony.github.io'
-DISQUS_SECRET_KEY = 'OYR1s5hqatldqUzAw8nllRMrQZfzHYcSSFwsCWmedwzpEU6OjVi5kx4jOWRDArAF'
-DISQUS_PUBLIC_KEY = '6y2rWTTNCXtOa74qKQK8Laz3YKz4JzV9ClXSeGYchXDfEhtImJqyrrSwfWjY8Scs'
+DISQUS_SITENAME = 'lordjhony.disqus.com'
 
 # theme
 THEME = "theme/pelican-clean-blog"
