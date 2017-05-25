@@ -45,7 +45,6 @@ PLUGINS = ['asciidoc_reader','assets','neighbors','share_post','related_posts']
 
 # theme
 THEME = "theme/pelican-clean-blog"
-PELICAN_COMMENT_SYSTEM = True
 
 
 # Uncomment following line if you want document-relative URLs when developing
