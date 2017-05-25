@@ -132,7 +132,7 @@
 {% if article.share_post and article.status != 'draft' %}
 <section>
     <p id="post-share-links">
-        Compártelo:
+	<h4>Compártelo:</h4>
 	<br />
         <a href="{{article.share_post['linkedin']}}" target="_blank" title="Share on Linkedin"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/social-media/linkedin.jpg"/></a>
         ❄
@@ -161,9 +161,9 @@
  {% if article.tags %}
  <section>
         <div class="tags">
-            <p>tags: {% for tag in article.tags %}
+            <p>{% for tag in article.tags %}
             <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a>
-            {% if not loop.last %}, {% endif %}{% endfor %}</p>
+            {% if not loop.last %}&nbsp;&nbsp;{% endif %}{% endfor %}</p>
         </div>
 </section>
 {% endif %}
