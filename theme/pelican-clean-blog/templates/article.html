@@ -129,10 +129,11 @@
         {{ article.content }}
     </article>
     <hr>
-    {% if article.share_post and article.status != 'draft' %}
+{% if article.share_post and article.status != 'draft' %}
 <section>
     <p id="post-share-links">
-        Share on:
+        Compártelo:
+	<br />
         <a href="{{article.share_post['linkedin']}}" target="_blank" title="Share on Linkedin"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/social-media/linkedin.jpg"/></a>
         ❄
         <a href="{{article.share_post['twitter']}}" target="_blank" title="Share on Twitter"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/social-media/twitter.jpg"/></a>
@@ -143,8 +144,10 @@
     </p>
 </section>
 {% endif %}
+<br /><br />
 <hr>
  {% if article.related_posts %}
+<h4>Artículos relacionados</h4>
 <section>
     <ul>
     {% for related_post in article.related_posts %}
@@ -153,14 +156,17 @@
     </ul>
 </section>
 {% endif %}
+<br /><br />
 <hr>
  {% if article.tags %}
  <section>
         <div class="tags">
-            <p>tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+            <p>tags: {% for tag in article.tags %}
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a>
+            {% if not loop.last %}, {% endif %}{% endfor %}</p>
         </div>
 </section>
-    {% endif %}
+{% endif %}
 	
 
     {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
