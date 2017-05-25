@@ -44,7 +44,7 @@ PLUGIN_PATHS = 'pelican-plugins'
 PLUGINS = ['asciidoc_reader','assets','neighbors','share_post','related_posts','disqus_static']
 
 # Discus
-DISQUS_SITENAME = 'lordjhony.disqus.com'
+# DISQUS_SITENAME = 'lordjhony.disqus.com'
 
 # theme
 THEME = "theme/pelican-clean-blog"
