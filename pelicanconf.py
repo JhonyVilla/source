@@ -45,8 +45,7 @@ PLUGINS = ['asciidoc_reader','assets','neighbors','share_post','related_posts','
 
 # Discus
 DISQUS_SITENAME = 'lordjhony'
-DISQUS_SECRET_KEY = '0HWOLrFI67AhzR2c1RK8PKAU4CyDDctucCcC7XDFXnrF1n1FQ2HSTmEFRgZvBQ0n'
-DISQUS_PUBLIC_KEY = 'FBX0N3LsniyFNFHkw61odNiKm7thaawSU8t7V6zsIVLuazSIXRhROcEzT9JRyMHz'
+
 
 # theme
 THEME = "theme/pelican-clean-blog"
