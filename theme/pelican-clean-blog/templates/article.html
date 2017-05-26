@@ -181,14 +181,14 @@
  <tr>
  {% if article.prev_article %}
      <td width="600px" aligh="center">
-         <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
+         <a href="{{ SITEURL }}/{{ article.prev_article.url}}" style= "background-color: #1d4f72; color: white;">
              {{ article.prev_article.title }}
          </a>
      </td>
  {% endif %}
  {% if article.next_article %}
      <td width="600px" aligh="center">
-         <a href="{{ SITEURL }}/{{ article.next_article.url}}">
+         <a href="{{ SITEURL }}/{{ article.next_article.url}}" style= "background-color: #1d4f72; color: white;">
              {{ article.next_article.title }}
          </a>
       </td>
