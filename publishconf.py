@@ -19,7 +19,7 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 
 # Discus
-DISQUS_SITENAME = 'lordjhony.disqus.com'
+DISQUS_SITENAME = 'lordjhony'
 
 # Following items are often useful when publishing
 
