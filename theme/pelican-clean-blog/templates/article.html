@@ -171,7 +171,7 @@
  <section>
         <div class="tags">
             <p>{% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a>
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }} style="background-color: #1b75bb; color: white;"</a>
             {% if not loop.last %}&nbsp;&nbsp;{% endif %}{% endfor %}</p>
         </div>
 </section>
