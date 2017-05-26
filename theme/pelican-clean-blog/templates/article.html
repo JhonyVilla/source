@@ -84,12 +84,6 @@
         {% else %}
             <meta property="og:image" content="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/post-bg.jpg">
         {% endif %}
-<script type="text/javascript">
-	function blog()
-	{
-	  alert("Hola");
-	}
-</script>
 {% endblock %}
 
 {% block header %}
@@ -101,7 +95,7 @@
     {% elif HEADER_COLOR %}
         <header class="intro-header" style="background-color: {{ HEADER_COLOR }}">
     {% else %}
-        <header class="intro-header" onclick="blog()" style="background-image: url('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/post-bg.jpg')">
+        <header class="intro-header" onclick="alert('hola mundo!');" style="background-image: url('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/post-bg.jpg')">
     {% endif %}
         <div class="container">
             <div class="row">
