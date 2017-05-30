@@ -101,7 +101,24 @@
 
 <body>
     <!-- Navigation -->
-    {% block header %}{% endblock header %}
+    {% block header %}
+	<div><nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Soluciones</a>
+        <ul>
+          <li><a>Ethical Hacking de Aplicación</a></li>
+          <li><a>Ethical Hacking de Infraestructura</a></li>
+          <li><a>Análisis de Código Fuente</a></li>
+        </ul>      
+      </li>
+      <li><a href="#">Beneficios</a></li>
+      <li><a href="#">Clientes</a></li>
+      <li><a href="#">Empleos</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul></nav>
+  </div>
+	{% endblock header %}
     <!-- Main Content -->
     <div class="container">
         <div class="row">
