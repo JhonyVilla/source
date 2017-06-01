@@ -1,12 +1,18 @@
+.content{
+  background-color: #14598e;
+  width:  100%;
+  height: 60px;
+  position: relative;
+}
 .menu{
-  background-color: #14598e;  
-  width: 100%;  
-  height: 50px;
-  display: table;  
+  background-color: #14598e;
+  width: 97%;
+  height: 60px;                    
 }
 .nav{
-  float: right;
-  text-alight: center;
+  float: right; 
+  margin-top: 15px; 
+  margin-right: 50px;                                                                            
 }
 .ul{
   list-style: none;
@@ -14,12 +20,12 @@
 .ul li{
   display: inline-block;
 }
-.ul li a{				
+.ul li a{
   color:#fff;
-  text-decoration:none; 
-  padding: 15px; 20px;
+  text-decoration:none;
+  padding: 20px 20px 20px 20px;
   font-size: 20px;
-  font-family: "Ubuntu",sans-serif;
+  font-family: "Ubuntu",sans-serif;                    
 }
 .ul li a:hover{
   background-color: #1d4f72;
@@ -29,10 +35,5 @@
 }
 .ul li ul{
   display:none;
-  position:absolute;   
-  width: 300px;
-  top: 77px;
-  left: 43%;  
+  position:absolute;                   
 }
-
-
