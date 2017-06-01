@@ -1,28 +1,20 @@
 .menu{
-  height: 50px;
-  width: 100%;    
+  background-color: #1d4f72;  
+  width: 100%;  
+  display: table;    
 }
 .ul{
-  width:100%; 
-  margin:0 auto;  
+  list-style: none;
 }
-.ul{
-  list-style: none;  
-}
-.ul > li{
-  float:left;  
+.ul li{
+  display: inline-block;
 }
 .ul li a{				
   color:#fff;
   text-decoration:none;
-  padding:10px 12px;
-  display:block;
-  background-color:#1d4f72;
+  padding:15px 25px;  
   font-size: 20px;
   font-family: "Ubuntu",sans-serif;
-}
-.ul li a:hover{
-  background-color:#434343;
 }
 .ul li ul{
   display:none;
@@ -30,10 +22,10 @@
   min-width:140px;
 }
 .ul li:hover > ul{
-  display:block;
+  display: block;
 }
 .ul li ul li{
-  position:relative;
+  position: relative;
 }
 
 @media screen and (max-width:800px ) {     
