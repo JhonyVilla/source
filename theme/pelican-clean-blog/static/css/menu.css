@@ -1,7 +1,8 @@
 .menu{
   background-color: #1d4f72;  
   width: 100%;  
-  display: table;    
+  display: table;  
+  height: 60px;
 }
 .ul{
   list-style: none;
@@ -26,6 +27,7 @@
 }
 .ul li ul li{
   position: relative;
+  display: block;
 }
 
 @media screen and (max-width:800px ) {     
