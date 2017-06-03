@@ -72,7 +72,7 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #fff;
   content: '';
 }
 #cssmenu > ul > li.has-sub > a:before {
@@ -82,7 +82,7 @@
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #fff;
   content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -155,7 +155,7 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #fff;
   content: '';
 }
 #cssmenu.align-right ul ul li.has-sub > a:after {
@@ -169,7 +169,7 @@
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #fff;
   content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -245,7 +245,7 @@
   #cssmenu #menu-button {
     display: block;
     padding: 17px;
-    color: #dddddd;
+    color: #fff;
     cursor: pointer;
     font-size: 12px;
     text-transform: uppercase;
