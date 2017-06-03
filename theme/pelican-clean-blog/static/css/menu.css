@@ -1,5 +1,4 @@
-     @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-        
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);        
                 
 #cssmenu,
 #cssmenu ul,
@@ -306,7 +305,7 @@
     cursor: pointer;
   }
   #cssmenu .submenu-button.submenu-opened {
-    background: #262626;
+    background: #1d4f72;
   }
   #cssmenu ul ul .submenu-button {
     height: 34px;
@@ -319,7 +318,7 @@
     width: 8px;
     height: 2px;
     display: block;
-    background: #14598e;
+    background: #fff;
     content: '';
   }
   #cssmenu ul ul .submenu-button:after {
@@ -336,7 +335,7 @@
     display: block;
     width: 2px;
     height: 8px;
-    background: #14598e;
+    background: #fff;
     content: '';
   }
   #cssmenu ul ul .submenu-button:before {
