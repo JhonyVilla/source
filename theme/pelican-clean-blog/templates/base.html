@@ -65,80 +65,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<script type="text/javascript">
-	(function($) {
-
-  $.fn.menumaker = function(options) {
-      
-      var cssmenu = $(this), settings = $.extend({
-        title: "Menu",
-        format: "dropdown",
-        sticky: false
-      }, options);
-
-      return this.each(function() {
-        cssmenu.prepend('<div id="menu-button">' + settings.title + '</div>');
-        $(this).find("#menu-button").on('click', function(){
-          $(this).toggleClass('menu-opened');
-          var mainmenu = $(this).next('ul');
-          if (mainmenu.hasClass('open')) { 
-            mainmenu.hide().removeClass('open');
-          }
-          else {
-            mainmenu.show().addClass('open');
-            if (settings.format === "dropdown") {
-              mainmenu.find('ul').show();
-            }
-          }
-        });
-
-        cssmenu.find('li ul').parent().addClass('has-sub');
-
-        multiTg = function() {
-          cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
-          cssmenu.find('.submenu-button').on('click', function() {
-            $(this).toggleClass('submenu-opened');
-            if ($(this).siblings('ul').hasClass('open')) {
-              $(this).siblings('ul').removeClass('open').hide();
-            }
-            else {
-              $(this).siblings('ul').addClass('open').show();
-            }
-          });
-        };
-
-        if (settings.format === 'multitoggle') multiTg();
-        else cssmenu.addClass('dropdown');
-
-        if (settings.sticky === true) cssmenu.css('position', 'fixed');
-
-        resizeFix = function() {
-          if ($( window ).width() > 768) {
-            cssmenu.find('ul').show();
-          }
-
-          if ($(window).width() <= 768) {
-            cssmenu.find('ul').hide().removeClass('open');
-          }
-        };
-        resizeFix();
-        return $(window).on('resize', resizeFix);
-
-      });
-  };
-})(jQuery);
-
-(function($){
-$(document).ready(function(){
-
-$("#cssmenu").menumaker({
-   title: "Menu",
-   format: "multitoggle"
-});
-
-});
-})(jQuery);
-	</script>
+	<script type="text/javascript" src="https://lordjhony.github.io/theme/js/menu.js"></script>
+	
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
