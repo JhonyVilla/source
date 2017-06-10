@@ -41,7 +41,12 @@ ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}.html'
 
 # Plugins
 PLUGIN_PATHS = 'pelican-plugins'
-PLUGINS = ['asciidoc_reader','assets','neighbors','share_post','related_posts','disqus_static']
+PLUGINS = ['asciidoc_reader','assets','neighbors','share_post','related_posts']
+
+#assets
+ASSET_BUNDLES = (
+    ('scss', ['menu.scss'], {'filters': 'pyscss'}),
+)
 
 # Discus
 DISQUS_SITENAME = 'lordjhony'
