@@ -59,7 +59,7 @@
             <link href="{{ SITEURL }}/{{ CSS_OVERRIDE }}" rel="stylesheet">
         {% endif %}
 	<!--<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/menu.css">-->
-	{% assets filters="sass,cssmin", output="css/menu.scss" %}
+	{% assets filters="sass", output="css/menu.scss" %}
 	 <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
 	{% endassets %}
 	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/footer.css">
