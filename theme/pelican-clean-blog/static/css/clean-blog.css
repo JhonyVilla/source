@@ -22,6 +22,11 @@ p strong{
  color: #666;
  font-size: 14px;
 }
+p strong span{
+ color: #194d73;
+ font-size: 18px;
+ font-style: bold; 
+}
 h1,
 h2,
 h3,
