@@ -31,9 +31,13 @@ p strong{
  background-color: #1b75bb;
  color: white;
  text-transform:uppercase;
+ text-decoration: none;
+ font-size: 15px;
 }
 .tags a:hover{
  background-color: #1d4f72;
+ color: #ddd;
+ text-decoration: none;
 }
 .next tr td a{
  background-color: #1d4f72; 
@@ -41,6 +45,8 @@ p strong{
 }
 .next tr td a:hover{
  background-color: #1b75bb;
+ color: #ddd;
+ text-decoration: none;
 }
 h1,
 h2,
