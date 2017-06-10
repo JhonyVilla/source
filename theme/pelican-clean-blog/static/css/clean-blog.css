@@ -16,7 +16,7 @@ p {
   margin: 30px 0;
 }
 p a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 p strong{
  color: #666;
@@ -26,6 +26,21 @@ p strong{
  color: #194d73;
  font-size: 18px;
  font-style: bold; 
+}
+.tags{
+ background-color: #1b75bb;
+ color: white;
+ text-transform:uppercase;
+}
+.tags:hover{
+ background-color: #1d4f72;
+}
+.next{
+ background-color: #1d4f72; 
+ color: white; 
+}
+.next:hover{
+ background-color: #1b75bb;
 }
 h1,
 h2,
