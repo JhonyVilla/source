@@ -22,7 +22,7 @@ p strong{
  color: #666;
  font-size: 14px;
 }
-p strong span{
+.writer{
  color: #194d73;
  font-size: 18px;
  font-style: bold; 
