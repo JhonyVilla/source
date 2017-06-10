@@ -18,6 +18,10 @@ p {
 p a {
   text-decoration: underline;
 }
+p strong{
+ color: #666;
+ font-size: 14px;
+}
 h1,
 h2,
 h3,
