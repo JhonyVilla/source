@@ -27,19 +27,19 @@ p strong{
  font-size: 18px;
  font-style: bold; 
 }
-.tags{
+.tags a{
  background-color: #1b75bb;
  color: white;
  text-transform:uppercase;
 }
-.tags:hover{
+.tags a:hover{
  background-color: #1d4f72;
 }
-.next{
+.next tr td a{
  background-color: #1d4f72; 
  color: white; 
 }
-.next:hover{
+.next tr td a:hover{
  background-color: #1b75bb;
 }
 h1,
