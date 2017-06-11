@@ -44,9 +44,7 @@ PLUGIN_PATHS = 'pelican-plugins'
 PLUGINS = ['asciidoc_reader','assets','neighbors','share_post','related_posts']
 
 #assets
-ASSET_BUNDLES = (
-    ('scss', ['menu.scss'], {'filters': 'pyscss'}),
-)
+
 
 # Discus
 DISQUS_SITENAME = 'lordjhony'
