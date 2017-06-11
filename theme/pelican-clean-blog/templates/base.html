@@ -60,7 +60,10 @@
         {% endif %}
 	<!--<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/menu.css">
 	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/footer.css">-->
-	{% assets filters="sass", output="static/css/menu.css, static/css/footer.css", "css/menu.sass, css/footer.sass" %}
+	{% assets filters="sass", output="static/css/menu.css", "css/menu.sass" %}
+	 <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+	{% endassets %}
+	{% assets filters="sass", output="static/css/footer.css", "css/footer.sass" %}
 	 <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
 	{% endassets %}
 	
