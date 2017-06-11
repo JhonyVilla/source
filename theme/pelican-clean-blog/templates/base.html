@@ -58,8 +58,7 @@
             <!-- CSS specified by the user -->
             <link href="{{ SITEURL }}/{{ CSS_OVERRIDE }}" rel="stylesheet">
         {% endif %}
-	<!--<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/menu.css">
-	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/footer.css">-->
+	
 	{% assets filters="sass", output="static/css/menu.css", "css/menu.sass" %}
 	 <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
 	{% endassets %}
