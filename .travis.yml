@@ -18,6 +18,8 @@ install:
 - pip install cssmin
 - pip install webassets
 - sudo apt-get install asciidoc source-highlight
+- sudo apt-get install ruby
+- sudo gem install sass
 
 script:
 - make publish
