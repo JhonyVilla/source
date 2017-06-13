@@ -66,7 +66,10 @@
 	{% endassets %}
 	{% assets filters="sass", output="static/css/footer.css", "css/footer.sass" %}
 	 <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
-	{% endassets %}	       
+	{% endassets %}
+	{% assets filters="sass", output="static/css/image.css", "css/image.sass" %}
+	 <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+	{% endassets %}
 
         <!-- Custom Fonts -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
