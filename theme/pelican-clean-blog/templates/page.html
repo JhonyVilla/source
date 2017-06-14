@@ -27,7 +27,8 @@
 
 {% block content %}
     <article>
-        {{ page.content }}        
+        {{ page.content }}  
+        {% include 'ethical.html' %}
     </article>
-    {% include 'analytics.html' %}
+    
 {% endblock content %}
