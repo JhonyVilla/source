@@ -44,7 +44,7 @@
             <table>
     {% for article in articles_page.object_list %} 
             {% set var = var + loop.index %}
-            {% if var % 2 != 0 %}
+            {% if var % 3 != 0 %}
             <tr><td>            
         <div class="post-preview">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
