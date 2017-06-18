@@ -52,6 +52,12 @@
                     {{ article.title }}
                 </h2>
             </a>
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icon.png"/>
+            {% for author in article.authors %}
+             <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+            {% endfor %}
+             &nbsp;&nbsp;<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/calendar.png"/>{{ article.locale_date }}
+             
             {% if SHOW_FULL_ARTICLE %}
                 {{ article.content }}
             {% else %}
@@ -63,12 +69,7 @@
                 {% endif %}
                 </p>
             {% endif %}
-            <p class="post-meta"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icon.png"/>
-                {% for author in article.authors %}
-                    <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-                {% endfor %}
-                  &nbsp;&nbsp;<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/calendar.png"/>{{ article.locale_date }}
-            </p>           
+                     
                 </div></td>
                 {% else %}
                 <td><div class="post-preview">
@@ -77,6 +78,11 @@
                     {{ article.title }}
                 </h2>
             </a>
+             <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icon.png"/>
+                {% for author in article.authors %}
+                  <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                {% endfor %}
+                &nbsp;&nbsp;<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/calendar.png"/>{{ article.locale_date }}            
             {% if SHOW_FULL_ARTICLE %}
                 {{ article.content }}
             {% else %}
@@ -88,12 +94,7 @@
                 {% endif %}
                 </p>
             {% endif %}
-            <p class="post-meta"><img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icon.png"/>
-                {% for author in article.authors %}
-                    <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-                {% endfor %}
-                  &nbsp;&nbsp;<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/calendar.png"/>{{ article.locale_date }}
-            </p>           
+                     
                     </div></td></tr>
                 {% endif %}
                 {% endfor %}</table>
