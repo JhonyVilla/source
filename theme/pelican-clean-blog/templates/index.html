@@ -41,7 +41,8 @@
 {% endblock header %}
 
 {% block content %}
-    {% for article in articles_page.object_list %}
+            {% int var=2 %}
+    {% for article in articles_page.object_list %}            
         <div class="post-preview">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
                 <h2 class="post-title">
