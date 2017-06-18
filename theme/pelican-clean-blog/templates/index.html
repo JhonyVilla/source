@@ -40,9 +40,10 @@
     </header>
 {% endblock header %}
 
-{% block content %}                
+{% block content %}  
+            {% set var = 0 %}
     {% for article in articles_page.object_list %} 
-            {% set var = var + 1 %}
+            {% set var = var + loop %}
             {{ var }}
         <div class="post-preview">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
