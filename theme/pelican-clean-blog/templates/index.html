@@ -48,7 +48,7 @@
             <tr><td>            
         <div class="post-preview">
             {% if  article.featured_image %}
-    <img src="{{ article.featured_image }}">
+    <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/article.Image }}">
 {% endif %}
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
                 <h2 class="post-title">
