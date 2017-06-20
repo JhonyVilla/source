@@ -48,7 +48,7 @@
             <tr><td>            
         <div class="post-preview">           
             {% if  article.featured_image %}            
-             <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ article.featured_image }}">
+             <img src="{{ SITEURL }}/{{ article.featured_image }}">
             {% endif %}
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
                 <h2 class="post-title">
@@ -76,7 +76,9 @@
                 </div></td>
                 {% else %}
                 <td><div class="post-preview">
-                 
+                 {% if  article.featured_image %}            
+                   <img src="{{ SITEURL }}/{{ article.featured_image }}">
+                 {% endif %}
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
                 <h2 class="post-title">
                     {{ article.title }}
