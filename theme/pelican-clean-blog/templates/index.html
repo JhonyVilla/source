@@ -41,6 +41,9 @@
 {% endblock header %}
 
 {% block content %} {% set var = 0 %}
+            {% if  article.featured_image %}
+    <img src="{{ article.featured_image }}">
+{% endif %}
             <table>
     {% for article in articles_page.object_list %} 
             {% set var = var + loop.index %}
