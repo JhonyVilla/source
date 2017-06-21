@@ -70,10 +70,9 @@
                 {% elif article.summary %}
                     {{ article.summary|striptags|truncate(140) }}
                 {% endif %}
-                </p>
-                    <a class="read-more" href="{{ SITEURL }}/{{ article.url }}">Seguir leyendo</a>
+                </p>                    
             {% endif %}
-                     
+                <a class="read-more" href="{{ SITEURL }}/{{ article.url }}">Seguir leyendo</a>                     
                 </div></td>
                 {% else %}
                 <td><div class="post-preview">
