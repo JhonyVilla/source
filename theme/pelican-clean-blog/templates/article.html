@@ -160,7 +160,11 @@
 <section class="related">
     <ul>
     {% for related_post in article.related_posts %}
-        <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+        <li> 
+         {% if  article.featured_image %}     
+	    <img src="{{ SITEURL }}/{{ article.featured_image }}">
+	 {% endif %}
+	  <a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
     {% endfor %}
     </ul>
 </section>
