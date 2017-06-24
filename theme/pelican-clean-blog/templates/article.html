@@ -161,7 +161,7 @@
     <table><tr>
     {% for related_post in article.related_posts %}
         <td>               
-	  <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ related_post.Image }}">	 
+	  <img src="{{ SITEURL }}/{{ related_post.url }}/{{ related_post.Image }}">	 
 	  <a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a>
 	</td>
     {% endfor %}
