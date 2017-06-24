@@ -162,7 +162,7 @@
     {% for related_post in article.related_posts %}
         <td> 
          {% if  article.featured_image %}     
-	    <img src="{{ SITEURL }}/{{ related_post.featured_image }}">
+	    <img src="{{ SITEURL }}/{{ related_post.Image }}">
 	 {% endif %}
 	  <a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></td>
     {% endfor %}
