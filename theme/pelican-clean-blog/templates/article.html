@@ -155,14 +155,15 @@
 </section>		
 {% endif %}
 <hr>
- {% if article.related_posts %}
+ {% if article.related_posts %}		
 <h4>Relacionado</h4>
 <section class="related">
     <table><tr>
     {% for related_post in article.related_posts %}
-        <td>               
-	  <img src="{{ SITEURL }}/{{ related_post.url }}/{{ related_post.Image }}">	 
-	  <a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a>
+        <td>   
+		{{ related_post.Image }}
+	  <!--<img src="{{ SITEURL }}/{{ related_post.url }}/{{ related_post.Image }}">	 
+	  <a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a>-->
 	</td>
     {% endfor %}
     </tr></table>
