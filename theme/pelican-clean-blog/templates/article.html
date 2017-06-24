@@ -156,8 +156,8 @@
 {% endif %}
 <hr>
  {% if article.related_posts %}
-<h4>Artículos relacionados</h4>
-<section>
+<h4>Relacionado</h4>
+<section class="related">
     <ul>
     {% for related_post in article.related_posts %}
         <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
