@@ -55,11 +55,12 @@
                     {{ article.title }}
                 </h2>
             </a>
-            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icon.png"/>
+            <img class="imgprev" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icon.png"/>
             {% for author in article.authors %}
              <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
             {% endfor %}
-             &nbsp;&nbsp;<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/calendar.png"/>{{ article.locale_date }}
+             &nbsp;&nbsp;<img class="imgprev" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/calendar.png"/>
+                <span>{{ article.locale_date }}</span>
              
             {% if SHOW_FULL_ARTICLE %}
                 {{ article.content }}
@@ -85,11 +86,12 @@
                     {{ article.title }}
                 </h2>
             </a>
-             <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icon.png"/>
+             <img class="imgprev" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/icon.png"/>
                 {% for author in article.authors %}
                   <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
                 {% endfor %}
-                &nbsp;&nbsp;<img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/calendar.png"/>{{ article.locale_date }}            
+                &nbsp;&nbsp;<img class="imgprev" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/calendar.png"/>
+                    <span>{{ article.locale_date }}</span>            
             {% if SHOW_FULL_ARTICLE %}
                 {{ article.content }}
             {% else %}
