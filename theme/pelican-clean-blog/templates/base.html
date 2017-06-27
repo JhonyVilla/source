@@ -137,11 +137,15 @@
 	
     <!-- jQuery -->
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
     <!-- js barra de menu -->	
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/menu.js"></script> 
+    <!-- stacktable -->
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/stacktable/stacktable.js">
+	$(document).ready(function() {
+	$('#tblent').stacktable();});
+    </script> 
     {% if not DISABLE_CUSTOM_THEME_JAVASCRIPT %}
         <!-- Custom Theme JavaScript -->
       <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/clean-blog.min.js"></script>
