@@ -27,9 +27,11 @@
 {% endblock header %}
 
 {% block content %}
+   <div id="divpage">         
     <article>
         {{ page.content }}  
         {% include 'ethical.html' %}
     </article>
+   </div>     
     
 {% endblock content %}
