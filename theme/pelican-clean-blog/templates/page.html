@@ -17,9 +17,7 @@
         <div class="container">
             <div class="row" id="roweth">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <h1>{{ page.title }}</h1>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -27,6 +25,9 @@
 {% endblock header %}
 
 {% block content %}
+   <div class="post-heading">
+       <h1>{{ page.title }}</h1>
+   </div>
    <div id="divpage">         
     <article>
         {{ page.content }}  
